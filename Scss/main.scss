@@ -1,6 +1,4 @@
-body {background-color: green ;}
-
-
-h1 {font-family:Verdana, Geneva, Tahoma, sans-serif;}
-
-
+@import 'base';
+@import 'components';
+@import '/Scss/layout/header';
+@import '/Scss/layout/nav';
