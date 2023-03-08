@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>TP integration maquette figma</title>
 </head>
+
 <body>
-    <h1> TEST</h1>
+    <header class="entete">
+        <div class="entete__signup-logo">
+            <img class="entete__img-logo" src="./images/" alt="logo">
+            <button class="entete__signup-button"> Sign up</button>
+        </div>
+        <div class="entete__wallpaper-email">
+            <img src="./images/" alt="wallpaper">
+            <h1>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+            <input type="text" name="Emailadress" value="Email adress">
+            <input type="submit" value="Submit">
+        </div>
+    </header>
+
+    <main>
+        <section class="main-section">
+            <article class="main-section__article">
+                <img src="puzzle" alt="puzzle">
+                <h2>Lorem Ipsum</h2>
+                <p>ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato</p>
+            </article>
+
+            <article class="main-section__article">
+                <img src="puzzle" alt="puzzle">
+                <h2>Lorem Ipsum</h2>
+                <p>ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato</p>
+            </article>
+
+            <article class="main-section__article">
+                <img src="puzzle" alt="puzzle">
+                <h2>Lorem Ipsum</h2>
+                <p>ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato</p>
+            </article>
+        </section>
+
+        <section class="main-section2">
+            <h2 class="main-section2__titre">Contact us</h2>
+            <form class="main-section2__form" method="post" action="#">
+                firstname <input type="text" name="nom" value="name">
+                lastname <input type="text" name="prenom" value="lastname"> <br>
+                Email adress <input type="text" name="email" value="email adress">
+                Phonenumber <input type="text" name="phonenumber" value="Phonenumber"> <br>
+                <textarea name="yourmessage" id="yourmessage" cols="30" rows="10">Type Your message</textarea>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__link">
+            <a href="about.html">About</a>
+            <a href="contact.html">- Contact </a>
+            <a href="terms.html">- Terms of use </a>
+            <a href="policy.html">- Privacy Policy </a>
+        </p>
+        <p> My Website 2022 - All rights reserved </p>
+    </footer>
+
+
 </body>
+
 </html>
