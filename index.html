@@ -8,53 +8,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>TP integration maquette figma</title>
 </head>
 
 <body>
     <header class="entete">
-        <div class="entete__signup-logo">
-            <img class="entete__img-logo" src="./images/" alt="logo">
+        <nav class="entete__signup-logo">
+            <img class="entete__logo" src="./images/" alt="logo placeholder">
             <button class="entete__signup-button"> Sign up</button>
-        </div>
+        </nav>
         <div class="entete__wallpaper-email">
-            <img src="./images/istockphoto-1325683699-612x612.jpg" alt="wallpaper">
             <h1>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-            <input type="text" name="Emailadress" value="Email adress">
-            <input type="submit" value="Submit">
+            <div class="entete__input">
+                <input type="text" name="Emailaddress" value="Email address">
+                <button type="submit"> Submit </button>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="main-section">
-            <article class="main-section__article">
-                <img src="puzzle" alt="puzzle">
+        <section class="main__section">
+            <article class="main__section__article">
+                <img src="/images/puzzle.png" alt="puzzle">
                 <h2>Lorem Ipsum</h2>
                 <p>ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato</p>
             </article>
 
-            <article class="main-section__article">
-                <img src="puzzle" alt="puzzle">
+            <article class="main__section__article">
+                <img src="/images/puzzle.png" alt="puzzle">
                 <h2>Lorem Ipsum</h2>
                 <p>ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato</p>
             </article>
 
-            <article class="main-section__article">
-                <img src="puzzle" alt="puzzle">
+            <article class="main__section__article">
+                <img src="/images/puzzle.png" alt="puzzle">
                 <h2>Lorem Ipsum</h2>
                 <p>ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato</p>
             </article>
         </section>
 
-        <section class="main-section2">
-            <h2 class="main-section2__titre">Contact us</h2>
-            <form class="main-section2__form" method="post" action="#">
-                firstname <input type="text" name="nom" value="name">
-                lastname <input type="text" name="prenom" value="lastname"> <br>
-                Email adress <input type="text" name="email" value="email adress">
-                Phonenumber <input type="text" name="phonenumber" value="Phonenumber"> <br>
-                <textarea name="yourmessage" id="yourmessage" cols="30" rows="10">Type Your message</textarea>
+        <section class="main__section2">
+            <h2 class="main__section2__titre">Contact us</h2>
+            <form class="main__section2__form" method="post" action="#">
+                <div class="section2__form__input">
+                    <input type="text" name="nom" placeholder="Firstname">
+                    <input type="text" name="prenom" placeholder="Lastname"> 
+                    <input type="text" name="email" placeholder="Email address">
+                    <input type="text" name="phonenumber" placeholder="Phone number">
+                </div>
+                <textarea name="yourmessage" id="yourmessage" placeholder="Type Your message"></textarea>
+                <button class="main__section2__form__button" type="submit">Submit</button>
             </form>
         </section>
     </main>
@@ -66,7 +73,7 @@
             <a href="terms.html">- Terms of use </a>
             <a href="policy.html">- Privacy Policy </a>
         </p>
-        <p> My Website 2022 - All rights reserved </p>
+        <p class="footer__text"> My Website 2022 - All rights reserved </p>
     </footer>
 
 

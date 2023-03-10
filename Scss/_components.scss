@@ -1,0 +1,19 @@
+.entete {
+    & .entete__signup-button {
+        @include button-style;
+        margin-top: 5px;
+        margin-right: 10%;
+        margin-bottom: 5px;
+        
+    }
+
+    & .entete__input button {
+        @include button-style;
+
+        
+    }
+
+    & .main-section2__form__button {
+        @include button-style;
+    }
+}

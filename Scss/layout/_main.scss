@@ -1,0 +1,107 @@
+.main__section {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 16px;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 75%;
+        height: 1px;
+        background-color: black;
+        left: 50%;
+        transform: translateX(-50%);
+        top: calc(100% + 18px);  
+    }
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+
+        max-width: 250px;
+
+        h2 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.main__section__article img {
+    @include puzzle;
+}
+
+.section2__form__input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    input {
+        background: linear-gradient(0deg, #F8F9FA, #F8F9FA), linear-gradient(0deg, #F8F9FA, #F8F9FA), #F8F9FA;
+        border: 1px solid #C6C6C6;
+        border-radius: 5px;
+        padding: 4px;
+    }
+}
+
+.main__section2 {
+    padding: 16px;
+
+    &__titre {
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        padding: 14px;
+        max-width: 640px;
+        margin: 0 auto;
+
+        textarea {
+            resize: none;
+            height: 150px;
+            background: linear-gradient(0deg, #F8F9FA, #F8F9FA), linear-gradient(0deg, #F8F9FA, #F8F9FA), #F8F9FA;
+            border: 1px solid #C6C6C6;
+            border-radius: 5px;
+            padding: 4px;
+        }
+
+        button {
+            @include button-style;
+            width: fit-content;
+            padding: 4px 8px;
+            cursor: pointer;
+        }
+    }
+}
