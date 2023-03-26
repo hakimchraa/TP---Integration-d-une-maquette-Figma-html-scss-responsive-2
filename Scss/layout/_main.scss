@@ -6,6 +6,7 @@
     justify-items: center;
     gap: 16px;
     position: relative;
+
     &::after {
         position: absolute;
         content: '';
@@ -15,7 +16,7 @@
         background-color: black;
         left: 50%;
         transform: translateX(-50%);
-        top: calc(100% + 18px);  
+        top: calc(100% + 18px);
     }
 
     @media screen and (min-width: 768px) {
@@ -62,6 +63,7 @@
         grid-template-columns: repeat(2, 1fr);
 
     }
+
     input {
         background: linear-gradient(0deg, #F8F9FA, #F8F9FA), linear-gradient(0deg, #F8F9FA, #F8F9FA), #F8F9FA;
         border: 1px solid #C6C6C6;
